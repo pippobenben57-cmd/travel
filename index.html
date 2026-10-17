@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="渊默的读书笔记：《旅行之必要》（New Philosopher 新哲人 04）逐篇精读，十七章加结语，从旅行的三种形态一路读到伦理、思想、时间与“真正归来”。">
+<title>旅行之必要 · 精读笔记 — 渊默的学习小院</title>
+<style>
+:root{
+  --bg:#f2f1ee;--panel:#fbfaf8;--ink:#1d1f24;--soft:#5b616b;--faint:#8b919a;--line:#d5d4cf;
+  --acc:#3d5f78;--acc2:#a0623a;--acc-soft:#e1e8ee;
+  --kai:"Kaiti SC","STKaiti","KaiTi","楷体",serif;
+  --song:"Songti SC","STSong","SimSun","Noto Serif CJK SC",serif;
+  --sans:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#14161a;--panel:#1b1e23;--ink:#e3e5e9;--soft:#a1a7b0;--faint:#737a84;--line:#32363d;--acc:#8fb4d0;--acc2:#e0a07a;--acc-soft:#223241;color-scheme:dark}
+}
+*{box-sizing:border-box}
+html{color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--song);font-size:17px;line-height:1.9;padding:22px 18px 64px}
+[hidden]{display:none!important}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0;text-align:inherit}
+a{color:var(--acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.wrap{max-width:1080px;margin-inline:auto}
+.home{font-size:.84rem;color:var(--soft);text-decoration:none;letter-spacing:.06em}
+.home:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;gap:8px 24px;margin:12px 0 14px}
+.ttl{flex:1 1 360px;min-width:0}
+h1{font-family:var(--kai);font-weight:400;font-size:clamp(2.2rem,6vw,3.2rem);line-height:1.15;margin:0;letter-spacing:.08em}
+.en{font-family:var(--sans);font-size:.9rem;color:var(--soft);margin:4px 0 0}
+.find{flex:0 1 280px;min-width:0}
+input[type=search]{font:inherit;font-size:.92rem;color:var(--ink);background:var(--panel);border:1px solid var(--line);padding:6px 12px;width:100%;border-radius:0}
+.qres{border:1px solid var(--line);background:var(--panel);padding:10px 14px;margin-bottom:14px;max-height:340px;overflow-y:auto}
+.qres p{margin:0 0 4px;font-size:.82rem;color:var(--soft)}
+.qres button{display:block;width:100%;padding:4px 0;font-size:.92rem;line-height:1.6;border-top:1px dotted var(--line)}
+.qres button b{font-weight:400;color:var(--acc);margin-right:8px}
+.qres button:hover span{text-decoration:underline}
+mark{background:var(--acc-soft);color:inherit}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;flex-wrap:wrap;gap:2px 18px;padding:8px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);margin-bottom:26px}
+nav.tabs a{font-family:var(--kai);font-size:1.06rem;color:var(--soft);text-decoration:none;border-bottom:2px solid transparent}
+nav.tabs a:hover{color:var(--ink)}
+nav.tabs a[aria-current="page"]{color:var(--acc);border-bottom-color:var(--acc)}
+@media (max-width:760px){nav.tabs{position:static}}
+main{max-width:880px}
+h2{font-family:var(--kai);font-weight:400;font-size:clamp(1.8rem,5vw,2.3rem);line-height:1.25;margin:0 0 10px}
+h3{font-family:var(--kai);font-weight:400;font-size:1.4rem;margin:36px 0 8px;color:var(--acc)}
+h4{font-family:var(--kai);font-weight:400;font-size:1.15rem;margin:0}
+p{margin:0 0 12px}
+.lede{font-size:1.04rem;max-width:42em}
+.soft{color:var(--soft)}
+.fine{font-size:.86rem;color:var(--soft);border-left:2px solid var(--acc);padding-left:10px;max-width:46em}
+.big{font-family:var(--kai);font-size:1.4rem;line-height:1.7;color:var(--acc);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;margin:14px 0 18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:12px 0}
+.cards a{display:block;border:1px solid var(--line);background:var(--panel);padding:12px 14px;color:var(--ink);text-decoration:none}
+.cards a:hover{border-color:var(--acc)}
+.cards b{display:block;font-family:var(--kai);font-weight:400;font-size:1.15rem;color:var(--acc)}
+.cards span{font-size:.88rem;color:var(--soft);line-height:1.6;display:block}
+.row{padding:14px 0;border-top:1px solid var(--line)}
+.row h4 small{font-family:var(--sans);font-size:.78rem;color:var(--faint);margin-left:8px}
+.row p{margin:4px 0 0}
+ol.tl{list-style:none;margin:0;padding:0}
+ol.tl li{display:grid;grid-template-columns:5em minmax(0,1fr);gap:0 14px;padding:6px 0;border-top:1px dotted var(--line)}
+ol.tl b{font-weight:400;color:var(--acc);font-variant-numeric:tabular-nums}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:0 10px;padding:10px 0;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s);font-family:var(--sans);color:var(--panel);background:var(--acc);width:1.6em;height:1.6em;border-radius:50%;display:grid;place-items:center;font-size:.86rem;margin-top:.25em}
+.steps p{margin:2px 0 0}
+.loop{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:10px 0 4px;font-family:var(--kai);font-size:1.05rem}
+.loop span{border:1px solid var(--acc);color:var(--acc);padding:2px 10px;background:var(--panel)}
+.loop i{font-style:normal;color:var(--faint)}
+.ch{margin-top:30px;border-top:2px solid var(--ink);padding-top:10px;scroll-margin-top:60px}
+.ch h3{margin:0;color:var(--ink)}
+.ch>p{color:var(--soft);margin:6px 0 4px}
+.pr{display:grid;grid-template-columns:3.2em minmax(0,1fr);gap:0 12px;padding:10px 0;border-top:1px dotted var(--line)}
+.pr .no{font-family:var(--sans);color:var(--acc);font-variant-numeric:tabular-nums;font-size:.9rem;padding-top:3px}
+.pr h4{font-size:1.1rem}
+.pr p{margin:2px 0 0;font-size:.97rem}
+ul.take{margin:6px 0 0;padding-left:1.2em}
+ul.take li{margin:2px 0}
+.part{margin-top:34px}
+.part>h3{color:var(--acc2)}
+.nt{margin-top:34px;border-top:2px solid var(--ink);padding-top:10px;scroll-margin-top:60px}
+.nt .pt{font-family:var(--sans);font-size:.78rem;color:var(--faint);letter-spacing:.04em}
+.nt h3{margin:2px 0 6px;color:var(--ink)}
+.nt .qq{font-family:var(--kai);font-size:1.12rem;color:var(--acc);margin:4px 0 10px}
+.nt h5{font-family:var(--sans);font-weight:600;font-size:.8rem;letter-spacing:.08em;color:var(--acc2);margin:14px 0 4px}
+.nt ul{margin:0;padding-left:1.2em}.nt li{margin:3px 0}
+.nt .todo li::marker{content:"□ "}
+.nt .ask{border-left:2px solid var(--acc2);padding-left:10px;color:var(--soft)}
+.toolbar{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:10px 0;font-family:var(--sans);font-size:.86rem}
+.toolbar button{border:1px solid var(--line);padding:2px 10px;background:var(--panel)}
+.toolbar button[aria-pressed="true"]{border-color:var(--acc);color:var(--acc)}
+.nt.hid .fold{display:none}
+.jump{display:flex;flex-wrap:wrap;gap:4px 14px;margin:6px 0;font-family:var(--kai);font-size:1.02rem}
+.jump a{color:var(--soft);text-decoration:none}
+.jump a:hover{color:var(--acc)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+td,th{text-align:left;vertical-align:top;padding:7px 10px 7px 0;border-top:1px solid var(--line)}
+th{font-weight:400;font-family:var(--kai);color:var(--soft)}
+td.e{font-family:var(--sans);font-size:.8rem;color:var(--faint)}
+.tw{overflow-x:auto}
+.quad{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0;max-width:520px}
+.quad div{border:1px solid var(--line);background:var(--panel);padding:10px 12px;font-size:.9rem}
+.quad b{display:block;font-family:var(--kai);font-weight:400;color:var(--acc);font-size:1.05rem}
+footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--line);font-size:.8rem;color:var(--faint);max-width:60em}
+@media (max-width:560px){.pr{grid-template-columns:minmax(0,1fr)}.pr .no{padding-top:0}}
+
+details.tk{border-top:1px solid var(--line);padding:12px 0}
+details.tk summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:9.5em minmax(0,1fr);gap:0 14px}
+details.tk summary::-webkit-details-marker{display:none}
+details.tk summary .dt{font-family:var(--sans);font-size:.8rem;color:var(--faint);padding-top:4px}
+details.tk summary b{font-family:var(--kai);font-weight:400;font-size:1.18rem;color:var(--ink)}
+details.tk summary small{display:block;font-size:.84rem;color:var(--soft)}
+details.tk summary .kd{font-family:var(--sans);font-size:.72rem;color:var(--acc2);border:1px solid var(--acc2);padding:0 5px;margin-right:6px;vertical-align:2px}
+details.tk[open] summary b{color:var(--acc)}
+details.tk .bd{padding:8px 0 4px 0;margin-left:calc(9.5em + 14px)}
+details.tk .src{font-size:.84rem;color:var(--soft)}
+@media (max-width:640px){details.tk summary{grid-template-columns:minmax(0,1fr)}details.tk .bd{margin-left:0}}
+.bk{display:grid;grid-template-columns:2.4em minmax(0,1fr);gap:0 10px;padding:10px 0;border-top:1px dotted var(--line)}
+.bk .no{font-family:var(--sans);color:var(--faint);font-size:.82rem;padding-top:4px;font-variant-numeric:tabular-nums}
+.bk h4{font-size:1.12rem}
+.bk h4 small{font-family:var(--sans);font-size:.78rem;color:var(--faint);margin-left:8px}
+.bk p{margin:3px 0 0;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chips button{font-family:var(--sans);font-size:.82rem;border:1px solid var(--line);background:var(--panel);padding:3px 10px}
+.chips button[aria-pressed="true"]{border-color:var(--acc);color:var(--acc)}
+.six{counter-reset:s;list-style:none;padding:0;margin:8px 0 16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.six li{counter-increment:s;border:1px solid var(--line);background:var(--panel);padding:10px 12px 10px 44px;position:relative;font-size:.94rem;line-height:1.7}
+.six li::before{content:counter(s);position:absolute;left:12px;top:10px;font-family:var(--sans);color:var(--panel);background:var(--acc);width:1.5em;height:1.5em;border-radius:50%;display:grid;place-items:center;font-size:.82rem}
+.six b{display:block;font-family:var(--kai);font-weight:400;font-size:1.08rem;color:var(--acc)}
+.civ{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:12px 0}
+.civ div{border:1px solid var(--line);background:var(--panel);padding:8px 10px;font-size:.86rem;line-height:1.6}
+.civ b{display:block;font-family:var(--kai);font-weight:400;font-size:1.1rem;color:var(--acc)}
+.civ div.hl{border-color:var(--acc2)}.civ div.hl b{color:var(--acc2)}
+@media (max-width:640px){.civ{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.src a{word-break:break-all}
+
+.tx{max-width:40em}
+.tx p{margin:0 0 9px}
+.tx p.ar{text-align:left;color:var(--faint);margin:-4px 0 4px 2em}
+.tx p.f{font-family:var(--kai);font-size:1.12rem;color:var(--acc);border-left:2px solid var(--acc);padding-left:10px}
+.tx h4{font-family:var(--kai);font-size:1.25rem;color:var(--acc2);margin:28px 0 10px;scroll-margin-top:60px}
+.tx p:target,.tx h4:target{background:var(--acc-soft)}
+.chn{font-family:var(--sans);font-size:.8rem;color:var(--faint);letter-spacing:.06em}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;border-top:1px solid var(--line);padding-top:12px;font-size:.92rem}
+.pn a{text-decoration:none;max-width:48%}
+.toc{counter-reset:c;list-style:none;padding:0;margin:10px 0}
+.toc li{border-top:1px dotted var(--line)}
+.toc a{display:grid;grid-template-columns:2.6em minmax(0,1fr);gap:0 8px;padding:8px 0;text-decoration:none;color:var(--ink)}
+.toc a b{font-family:var(--sans);font-weight:400;color:var(--faint);font-size:.82rem;padding-top:3px}
+.toc a:hover span{color:var(--acc)}
+.formula{border:1px solid var(--acc);background:var(--panel);padding:12px 16px;margin:14px 0;font-family:var(--kai);font-size:1.12rem;line-height:1.9}
+.dl{display:inline-block;border:1px solid var(--acc);padding:4px 14px;text-decoration:none;font-family:var(--sans);font-size:.88rem;margin:6px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="home" href="../">← 渊默的学习小院</a>
+<header>
+  <div class="ttl"><h1>旅行之必要</h1><p class="en">我的精读笔记 · New Philosopher 新哲人 04 · 逃离、抵达与新可能</p></div>
+  <div class="find"><input id="q" type="search" placeholder="搜：在场、陌生化、辛格、四维……" aria-label="搜索笔记"></div>
+</header>
+<div id="qres" class="qres" hidden></div>
+<nav class="tabs" id="tabs" aria-label="栏目">
+  <a href="#/" data-t="">总览</a>
+  <a href="#/c/1" data-t="c">逐章精读</a>
+  <a href="#/all" data-t="all">全文</a>
+</nav>
+<main id="main"></main>
+<footer>这是我自己的读书笔记，依据《New Philosopher 新哲人》第 04 期《旅行之必要》逐页阅读整理。笔记中的观点与解读属于笔记作者；涉及原刊的内容为概述和简短引用，原刊版权归原作者与出版方。</footer>
+</div>
+<script src="data.js"></script>
+<script>
+"use strict";
+const $=s=>document.querySelector(s),main=$("#main"),qres=$("#qres"),q=$("#q");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const CH=T.ch,last=CH[CH.length-1];
+const title=c=>c.n<=17?`${c.n}. ${c.t}`:c.t;
+function blocks(c){return c.b.map((b,i)=>{const id=`b${c.n}-${i}`;if(b[0]==="h")return `<h4 id="${id}">${esc(b[1])}</h4>`;
+  const s=b[1];const cls=/^[↓↑]$/.test(s)?"ar":(/[=≠]/.test(s)||(/→/.test(s)&&s.length<60))?"f":"";return `<p id="${id}"${cls?` class="${cls}"`:""}>${esc(s)}</p>`}).join("")}
+function chapter(c,withNav){const hs=c.b.map((b,i)=>[b,i]).filter(x=>x[0][0]==="h");
+  const k=CH.indexOf(c),pv=CH[k-1],nx=CH[k+1];
+  return `<section class="tx" id="ch${c.n}"><p class="chn">${c.n<=17?"第 "+c.n+" 章":"结语"}</p><h2>${esc(c.t)}</h2>
+  ${hs.length&&withNav?`<div class="jump">${hs.map(([b,i])=>`<a href="#b${c.n}-${i}" data-anchor="b${c.n}-${i}">${esc(b[1].replace(/^([一二三四五六七八九十]+、|\d+\. )/,"").slice(0,16))}</a>`).join("")}</div>`:""}
+  ${blocks(c)}
+  ${withNav?`<div class="pn">${pv?`<a href="#/c/${pv.n}">← ${esc(title(pv))}</a>`:"<span></span>"}${nx?`<a href="#/c/${nx.n}" style="text-align:right">${esc(title(nx))} →</a>`:`<a href="#/">回到总览 →</a>`}</div>`:""}</section>`}
+const V={};
+V[""]=()=>{const f=last.b.map(b=>b[1]);
+  const i1=f.findIndex(s=>s.startsWith("旅行 ≠ 位移"));
+  return `<p class="big">旅行不是去寻找另一个世界，而是借另一个世界，重新决定怎样生活在自己的世界。</p>
+<p class="soft" style="font-size:.9rem">${esc(T.sub)}</p>
+<h3>编者说明</h3><p class="lede">${esc(T.note)}</p>
+<h3>核心公式</h3><div class="formula">${f.slice(i1,i1+2).map(esc).join("<br>")}</div>
+<h3>一条不断扩展的旅行链条</h3><ol class="tl">${f.filter(s=>/^[\u4e00-\u9fff]{2}旅行：/.test(s)).map(s=>{const [a,b]=s.split("：");return `<li><b>${esc(a)}</b><span>${esc(b)}</span></li>`}).join("")}</ol>
+<h3>目录</h3><ol class="toc">${CH.map(c=>`<li><a href="#/c/${c.n}"><b>${c.n<=17?c.n:"结"}</b><span>${esc(c.t)}</span></a></li>`).join("")}</ol>`};
+V.c=n=>{const c=CH.find(x=>x.n===+n)||CH[0];return chapter(c,true)};
+V.all=()=>`<h2>全文</h2><p class="soft">十七章加结语连续排列，适合从头读到尾或打印。</p><div class="jump">${CH.map(c=>`<a href="#ch${c.n}" data-anchor="ch${c.n}">${c.n<=17?c.n+".":"结语"}</a>`).join("")}</div>${CH.map(c=>chapter(c,false)).join("")}`;
+function route(){
+  const p=location.hash.replace(/^#\/?/,"").split("/"),t=p[0]||"",arg=p[1],an=p[2];
+  document.querySelectorAll("#tabs a[data-t]").forEach(a=>a.removeAttribute("aria-current"));
+  const cur=document.querySelector(`#tabs a[data-t="${t}"]`);if(cur)cur.setAttribute("aria-current","page");
+  main.innerHTML=(V[t]||V[""])(arg);
+  if(an){const el=document.getElementById(an);if(el){el.scrollIntoView({block:"center"});return}}
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+document.addEventListener("click",e=>{
+  const a=e.target.closest("[data-anchor]");if(a){e.preventDefault();const el=document.getElementById(a.dataset.anchor);if(el)el.scrollIntoView({block:"start"});return}
+  const r=e.target.closest("[data-go]");if(r){qres.hidden=true;q.value="";const h=r.dataset.go;if(location.hash===h)route();else location.hash=h}});
+const IDX=[];CH.forEach(c=>c.b.forEach((b,i)=>IDX.push({c,i,s:b[1]})));
+function snip(t,s){const i=t.toLowerCase().indexOf(s.toLowerCase());const a=Math.max(0,i-18);return (a?"…":"")+esc(t.slice(a,i))+"<mark>"+esc(t.slice(i,i+s.length))+"</mark>"+esc(t.slice(i+s.length,i+s.length+30))+(t.length>i+s.length+30?"…":"")}
+q.addEventListener("input",()=>{const s=q.value.trim();if(!s){qres.hidden=true;return}
+  const sl=s.toLowerCase(),all=IDX.filter(x=>x.s.toLowerCase().includes(sl)),out=all.slice(0,80);qres.hidden=false;
+  qres.innerHTML=out.length?`<p>${all.length} 处${all.length>80?"，显示前 80 处":""}</p>`+out.map(x=>`<button data-go="#/c/${x.c.n}/b${x.c.n}-${x.i}"><b>${x.c.n<=17?"第 "+x.c.n+" 章":"结语"}</b><span>${snip(x.s,s)}</span></button>`).join(""):`<p>没有找到，换个词试试。</p>`});
+route();
+</script>
+</body>
+</html>
